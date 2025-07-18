@@ -1,0 +1,76 @@
+
+
+.hero-text-wrapper {
+   
+    background-color: rgba(0,0, 0, 0.5);
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+    width: 99.2vw;
+    height: 100vh;
+    box-shadow: inset 70px -20px 100px rgba(46, 46, 46, 0.9),
+            inset -400px -50px 234px rgba(38, 146, 255, 0.356);
+}
+.contact-btn {
+    padding: 20px 25px;
+    background: #2558b6;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.contact-btn:hover {
+box-shadow:
+        inset 0 -65px 0px rgba(0, 0, 0, 0.253);
+}
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.animate-slide-up {
+    animation: slideUp 4s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-title {
+    font-size: clamp(3.5rem, 8vw, 13rem);
+    font-weight: bold;
+    margin: 0 0 1rem;
+    line-height: 1.1;
+    color:#02008f;
+}
+
+.hero-desc {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    opacity: 0.9;
+    margin: 0;
+    line-height: 1.4;
+}
+

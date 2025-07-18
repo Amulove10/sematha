@@ -1,0 +1,128 @@
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem 2rem;
+    background: #f4f7f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 2rem;
+}
+
+.form-container,
+.contact-info {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.form-box h2,
+.contact-info h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: #003366;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1.5px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #003366;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.3);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #003366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #0055a5;
+}
+
+/* Contact Info Section */
+.contact-info {
+    text-align: center;
+}
+
+.contact-info a {
+    display: block;
+    margin: 1rem 0;
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: 0.3s;
+}
+
+.contact-info a i {
+    margin-right: 0.5rem;
+    color: #0055a5;
+}
+
+.contact-info a:hover {
+    color: #0055a5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    .form-container,
+    .contact-info {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    } }

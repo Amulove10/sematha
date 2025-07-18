@@ -1,0 +1,126 @@
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.project-container h1 {
+    font-size: 2.5rem;
+    color: #3d3c3c;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.show-more-btn {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.show-more-btn button {
+    padding: 10px 20px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.show-more-btn button:hover {
+    background: #444;
+}
+.card {
+    width: 400px;
+    height: 600px;
+    border-radius: 12px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.664);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.7);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    transition: left 0.5s ease;
+    padding: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.container:hover .overlay {
+    left: 0;
+}
+
+.overlay p {
+    background: #4d4c4c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease;
+}
+
+
+
+.overlay button {
+    background: #07a0f8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #005f99;
+    transform: scale(1.05);
+}
+
+.overlay button a {
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    display: inline-block;
+}

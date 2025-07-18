@@ -1,0 +1,145 @@
+.team-section {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+}
+
+.team-group {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.team-group h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 1.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+.team-member img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #003366;
+}
+
+.team-grid::-webkit-scrollbar,
+.scrollable-x::-webkit-scrollbar {
+    display: none;
+}
+
+.team-grid,
+.scrollable-x {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+@media (max-width: 1000px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .team-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .team-member {
+        flex: 0 0 85%;
+        scroll-snap-align: start;
+    }
+}
+
+@media (min-width: 601px) {
+    .scrollable-x {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .scrollable-x .team-member {
+        flex: 0 0 300px;
+        scroll-snap-align: start;
+    }
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: white;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+}
+
+.sidebar-content {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.sidebar-content img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.sidebar-title {
+    font-weight: bold;
+    color: #444;
+}
+
+.sidebar-bio {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+.detail-btn{
+    padding: 5px 10px;
+    border: none;
+    color: #555;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: rgb(183, 219, 250);
+}
