@@ -1,9 +1,7 @@
 
 
 .hero-text-wrapper {
-   
-    background-color: rgba(0,0, 0, 0.5);
-    padding: 2rem 3rem;
+background: linear-gradient(to right, #003566e3, #00dfd8);  padding: 2rem 3rem;
     border-radius: 1rem;
     color: white;
     text-align: center;
@@ -64,7 +62,7 @@ box-shadow:
     font-weight: bold;
     margin: 0 0 1rem;
     line-height: 1.1;
-    color:#02008f;
+    color:#dbdaff;
 }
 
 .hero-desc {

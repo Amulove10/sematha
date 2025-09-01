@@ -26,7 +26,7 @@ function Project() {
     <div className='project-container' id='project'>
       <h1>Our Latest Projects</h1>
 
-      <div data-aos="fade-up" className="project-wrapper">
+      <div data-aos="fade-right" className="project-wrapper">
         {projects.map((project, index) => (
           <div key={index} className="card">
             <div className="container">

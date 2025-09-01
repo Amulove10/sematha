@@ -42,7 +42,7 @@
 
 .logo img {
     width:150px;
-
+    background: #f59b148a;
 }
 
 .nav-links {
@@ -60,7 +60,7 @@
     color: rgb(32, 64, 206);
 }
 .nav-links a:hover {
-    color: dodgerblue;
+    color: rgba(255, 153, 0, 0.822);
 }
 
 .nav-toggle {

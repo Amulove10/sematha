@@ -135,7 +135,7 @@ export default function Team() {
         );
       })}
 
-      <aside className={`sidebar ${selectedMember ? 'open' : ''}`}>
+      <section className={`sidebar ${selectedMember ? 'open' : ''}`}>
         <button className="close-btn" onClick={() => setSelectedMember(null)}>×</button>
         {selectedMember && (
           <div className="sidebar-content">
@@ -146,7 +146,7 @@ export default function Team() {
             <a href={selectedMember.linkedin}><i className="fab fa-linkedin" style={{ color: "dodgerblue", fontSize: "2rem" }}></i></a>
           </div>
         )}
-      </aside>
+      </section>
     </section>
   );
 }

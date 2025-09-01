@@ -20,4 +20,5 @@ db.connect((err) => {
 })
 app.listen(port, () => {
     console.log('the server is listening');
-}) 
+})
+
